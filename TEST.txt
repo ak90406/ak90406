@@ -20,4 +20,18 @@ git log --pretty=format:"%h %s" ：可以指定要顯示的紀錄格式
 用git log限制輸出長度 ： EX :git log --since=2.weeks 列出兩週內所有commit
 git log --author=作者 ：用來找出該作者所有commit的紀錄
 
-測試ch2.4撤銷操作
+測試ch2.4撤銷操作 :
+2.4-a :
+git commit --amend ：接在git commit後面使用,萬一commit太草率,可以用--amend重新編寫注釋
+
+2.4-b :
+git reset HEAD <file> :取消git add功能
+
+ch2.4-c git checkout :刪除文件在git bash操作git add之後的暫存,可以恢復上一個版本,文件內更新的內容會消失
+git status 裡面有提示這兩個指令 ：git reset HEAD <file>,git checkout -- <file>
+
+原始文件→修改文件git add（暫存）→完稿文件git commit（提交到repo,打上版本注釋）
+
+2.5跳過,目前還沒用到遠程repo
+
+
