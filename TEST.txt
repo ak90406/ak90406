@@ -1,1 +1,9 @@
 test1 2013.9.5 tus
+
+git init :在當前目錄下建立repo
+git add filename ：將該檔案納入git的vcs之下
+
+測試git add後暫存功能
+運行了git add後又作修訂的文件,需重新運行git add把文件最新版本暫存才能commit
+
+測試git diff指令（再次於git add後再次修改文件）
