@@ -7,5 +7,17 @@ git add filename ：將該檔案納入git的vcs之下
 運行了git add後又作修訂的文件,需重新運行git add把文件最新版本暫存才能commit
 
 測試git diff指令（再次於git add後再次修改文件）
+SHIFT＋Q=離開VIM視窗
+git config --global core.editor Notepad++ 使git bash改用Notepad＋＋（文本編輯器）
 
-git commit -m練習
+git commit -a練習:可以在修改文件後跳過git add指令而直接commit
+
+git log -p:列出每次提交的內容差異
+git --stat:列出文件的行數變化
+git log --oneline:只會顯示一行版本
+git log --pretty=format:"%h %s" ：可以指定要顯示的紀錄格式
+
+用git log限制輸出長度 ： EX :git log --since=2.weeks 列出兩週內所有commit
+git log --author=作者 ：用來找出該作者所有commit的紀錄
+
+
