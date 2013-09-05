@@ -34,4 +34,6 @@ git status 裡面有提示這兩個指令 ：git reset HEAD <file>,git checkout -- <file>
 
 2.5跳過,目前還沒用到遠程repo
 
-
+2.6 tag 功能,可以事後對某個版本加上 vn.m,但好像無法修改
+＊如何刪除tag,如何在commit時附上tag
+2.7 git 技巧 ：自製組合指令,tab自動帶入指令
