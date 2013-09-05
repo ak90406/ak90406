@@ -20,4 +20,4 @@ git log --pretty=format:"%h %s" ：可以指定要顯示的紀錄格式
 用git log限制輸出長度 ： EX :git log --since=2.weeks 列出兩週內所有commit
 git log --author=作者 ：用來找出該作者所有commit的紀錄
 
-
+測試ch2.4撤銷操作
