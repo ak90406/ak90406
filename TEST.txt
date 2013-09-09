@@ -1,1 +1,4 @@
 test1 2013.9.5 tus
+
+2013.9.9 mon
+測試：使用git checkout v1.1 回到第一次commit的版本時,再編輯文件,存檔,再commit,資料會跑去哪
