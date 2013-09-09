@@ -38,8 +38,49 @@ git status 裡面有提示這兩個指令 ：git reset HEAD <file>,git checkout -- <file>
 ＊如何刪除tag,如何在commit時附上tag
 2.7 git 技巧 ：自製組合指令,tab自動帶入指令
 
+<<<<<<< HEAD
 git checkout 版本名 ：可以把REPO下的文件回復成該版本的狀態,若在當下編輯該版本會...
 測試結果在branch_v1.1 6b812b
 *找出更名branch的方法,把branch1改成其parent名字以辨別從哪邊接出去的
 
 ch3.2 分支的創建與合併,詳見branch1
+=======
+2013.9.9 mon
+CH3
+git branch BRANCHNAME ：創建新的branch在當前commit上
+git checkout BRANCHNAME ：變更HEAD到該branch上
+
+git checkout將HEAD變更到其他branch上再commit就會保存新的內容（該branch走向和master不一樣的路）
+但切回master時,文件內容會回到創建該次branch的狀態
+
+git checkout 可以查看某個版本的狀態（用TAG辨識之）
+想要用git checkout切換HEAD到其他branch上,必須完成所有commit,不能只丟到暫存
+如果只有暫存狀態,或是根本沒丟到暫存（只有修改文件）,則無法用git checkout BRANCHNAME指令來切換HEAD
+
+但如果使用
+git reset HEAD FILENAME :取消暫存
+git checkout -- FILENEME :刪除文件修改內容
+則可以清空工作區而完成git checkout 工作以切換HEAD到其他branch上
+
+＊git reset HEAD FILENAME,git checkout --指令在git2.4章（撤銷操作）
+＊輸入指令到一半時（ex：欲輸入checkout時,可以先打che),連按tab兩次,git bash會自動列出可以操作之指令,如果打到一半的指令是唯一選項,（ex：chec)則git bash會自動辨識為checkout指令而直接幫我輸入
+＊在輸入git checkout 指令後連按兩次tab可以看到"可執行的版本名","可切換的branch名",所以tab不只可以列出指令,而是能找出當下可以key的所有字串
+＊看自訂組合鍵git2.7（技巧和竅門）,以及TAG使用git2.6(打標籤）
+
+ch3.2 分支的創建與合併
+$ git checkout -b NEWBRANCH ：創建新的branch"NEWBRANCH"並且切換HEAD到它上面
+
+$ git merge BRANCHNAME ：將別的branch(BRANCHNAME)合併到當前HEAD所指branch上
+
+Fast forward ：快進,單線合併,當前master分支所在的位置是要被合併的branch上游
+$ git branch -d BRANCHNAME ：刪除BRANCHNEME,
+＊測試如果一個branchA已經有commit過,是一個有別於master版本的branch,且其branch是唯一指向該commit的,若此時刪除該branch會如何？
+＊merge後,要把一個branch砍掉,不然HEAD指向該branch時,會從該處延伸branch繼續下去？
+
+
+＊測試看看notepad++在開啟文件同時,切換branch後存檔是否會有錯亂
+＊更名,合併commit的方法
+＊學會更改每次開啟git bash時所在目錄的方法
+＊找一個git GUI來用
+＊知道github的功能
+>>>>>>> branch1
