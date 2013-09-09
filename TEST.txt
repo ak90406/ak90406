@@ -39,3 +39,7 @@ git status 裡面有提示這兩個指令 ：git reset HEAD <file>,git checkout -- <file>
 2.7 git 技巧 ：自製組合指令,tab自動帶入指令
 
 git checkout 版本名 ：可以把REPO下的文件回復成該版本的狀態,若在當下編輯該版本會...
+測試結果在branch_v1.1 6b812b
+*找出更名branch的方法,把branch1改成其parent名字以辨別從哪邊接出去的
+
+ch3.2 分支的創建與合併,詳見branch1
