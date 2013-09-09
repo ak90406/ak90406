@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 test1 2013.9.5 thu
 
 git init :在當前目錄下建立repo
@@ -84,3 +85,18 @@ $ git branch -d BRANCHNAME ：刪除BRANCHNEME,
 ＊找一個git GUI來用
 ＊知道github的功能
 >>>>>>> branch1
+=======
+test1 2013.9.5 tus
+
+2013.9.9 mon
+測試：使用git checkout v1.1 回到第一次commit的版本時,再編輯文件,存檔,再commit,資料會跑去哪
+
+結論：git bash 會把你的commit存下來,但若想要切換HEAD到其他branch,git bash會要求你開一個新的branch以延續v1.1的新commit
+
+git branch new_branch_name HASH值
+=git branch branch_v1.1 6b5182b
+
+如此,將會產生一個的branch_v1.1把6b5182b存下來
+（6b5182b是用checkout回到v1.1「第一次commit」,還未新創branch時的新commit
+
+>>>>>>> branch_v1.1
