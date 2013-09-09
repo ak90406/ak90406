@@ -37,3 +37,8 @@ git status 裡面有提示這兩個指令 ：git reset HEAD <file>,git checkout -- <file>
 2.6 tag 功能,可以事後對某個版本加上 vn.m,但好像無法修改
 ＊如何刪除tag,如何在commit時附上tag
 2.7 git 技巧 ：自製組合指令,tab自動帶入指令
+
+2013.9.9 mon
+git branch BRANCHNAME ：創建新的branch在當前commit上
+git checkout BRANCHNAME ：變更HEAD到該branch上
+
